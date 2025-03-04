@@ -1,3 +1,3 @@
 FROM almalinux:9
-USER useradd expense
+RUN useradd niharika
 CMD ["sleep", "100"]
