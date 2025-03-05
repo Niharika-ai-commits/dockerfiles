@@ -2,6 +2,6 @@ FROM almalinux:9
 ENV course="devops with aws" \
     trainer="Niharika" \
     duration="120hrs"
-ARG ${username:-niharika}
-RUN echo "Hello${trainer}" > /tmp/devops.txt
+ARG USERNAME=Niharika
+RUN echo "Hello user: ${USERNAME}" > /tmp/devops.txt
 CMD ["sleep", "100"]
